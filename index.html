@@ -436,7 +436,7 @@
     /* SVG logo — department mark */
     .hero-logo-svg {
       width: 360px;
-      height: 396px;
+      height: auto;
       position: relative;
       z-index: 2;
       filter: drop-shadow(0 16px 48px rgba(41,74,128,0.28));
@@ -2146,45 +2146,7 @@
         <div class="ring ring-2"></div>
         <div class="ring ring-3"></div>
 
-        <!-- Официальный логотип кафедры ЭиФ (брендбук) -->
-        <svg class="hero-logo-svg" style="display:block" viewBox="0 0 400 450" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <clipPath id="emblemClip">
-              <circle cx="200" cy="300" r="135"/>
-            </clipPath>
-          </defs>
-
-          <!-- МАРКЕР — крупный текст вверху -->
-          <text x="200" y="88" text-anchor="middle"
-                font-family="'Oswald','Arial Narrow',Arial,sans-serif"
-                font-size="100" font-weight="700" fill="#294A80" letter-spacing="6">МАРКЕР</text>
-
-          <!-- Тонкая разделительная линия -->
-          <line x1="40" y1="106" x2="360" y2="106" stroke="#4776C5" stroke-width="1.5" opacity="0.4"/>
-
-          <!-- Подпись прямо над логотипом -->
-          <text x="200" y="126" text-anchor="middle"
-                font-family="'Oswald','Arial Narrow',Arial,sans-serif"
-                font-size="14" font-weight="400" fill="#4776C5" letter-spacing="3">ЦМИ · СПбГУПТД</text>
-
-          <!-- Логотип-эмблема ниже (меньше, ближе к подписи) -->
-          <circle cx="200" cy="300" r="135" fill="white"/>
-          <g clip-path="url(#emblemClip)">
-            <path d="M 160,180 C 140,216 118,260 101,300 C 84,340 90,375 118,396"
-                  stroke="#294A80" stroke-width="11" fill="none" stroke-linecap="round"/>
-            <path d="M 75,243 C 98,226 124,220 160,228"
-                  stroke="#294A80" stroke-width="10" fill="none" stroke-linecap="round"/>
-            <path d="M 80,275 C 104,265 124,261 139,261"
-                  stroke="#294A80" stroke-width="9" fill="none" stroke-linecap="round"/>
-            <path d="M 72,287 C 72,320 84,345 108,360 C 122,351 126,333 118,317 C 103,308 83,300 72,287 Z"
-                  fill="#294A80"/>
-            <rect x="138" y="300" width="38" height="133" rx="6" fill="#4776C5"/>
-            <rect x="180" y="177" width="44" height="256" rx="6" fill="#294A80"/>
-            <rect x="228" y="177" width="38" height="80" rx="6" fill="#294A80"/>
-            <rect x="228" y="257" width="38" height="176" rx="6" fill="#4776C5"/>
-          </g>
-          <circle cx="200" cy="300" r="140" fill="none" stroke="#294A80" stroke-width="13"/>
-        </svg>
+        <img src="logo_kafedra.png" class="hero-logo-svg" alt="ЦМИ «МАРКЕР» — Кафедра ЭиФ СПбГУПТД">
 
         <!-- Floating chips -->
         <div class="hero-chip chip-1">
