@@ -70,7 +70,8 @@
     }
 
     .header-logo-img {
-      height: 40px;
+      height: 48px;
+      width: auto;
     }
 
     .header-divider {
@@ -1458,7 +1459,8 @@
       body { overflow-x: clip; }
 
       /* Header */
-      .header-univ-logo { display: none; }
+      .header-logo-img { height: 32px; }
+      .header-name { display: none; }
       .header-inner {
         padding-left: 16px;
         padding-right: 16px;
@@ -2055,36 +2057,15 @@
 <header class="header">
   <div class="header-inner">
     <div class="header-left">
-      <!-- Логотип ЦМИ МАРКЕР -->
-      <svg class="header-logo-img" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип ЦМИ МАРКЕР">
-        <defs><clipPath id="hc"><circle cx="100" cy="100" r="91"/></clipPath></defs>
-        <circle cx="100" cy="100" r="91" fill="white"/>
-        <g clip-path="url(#hc)">
-          <!-- Globe meridian arcs -->
-          <path d="M 80,10 C 65,38 48,70 34,100 C 20,132 26,165 50,188" stroke="#294A80" stroke-width="7.5" fill="none" stroke-linecap="round"/>
-          <path d="M 8,72 C 28,56 52,50 80,57" stroke="#294A80" stroke-width="7" fill="none" stroke-linecap="round"/>
-          <path d="M 14,107 C 36,97 56,93 68,93" stroke="#294A80" stroke-width="6.5" fill="none" stroke-linecap="round"/>
-          <path d="M 9,115 C 9,148 22,175 47,190 C 60,180 64,162 58,148 C 43,138 22,130 9,115 Z" fill="#294A80"/>
-          <!-- Bar chart columns -->
-          <rect x="66" y="100" width="26" height="95" rx="4" fill="#4776C5"/>
-          <rect x="95" y="8" width="30" height="187" rx="4" fill="#294A80"/>
-          <rect x="129" y="8" width="26" height="54" rx="4" fill="#294A80"/>
-          <rect x="129" y="62" width="26" height="133" rx="4" fill="#4776C5"/>
-          <!-- Marker highlight streak -->
-          <rect x="66" y="55" width="89" height="12" rx="3" fill="#4776C5" opacity="0.35"/>
-        </g>
-        <circle cx="100" cy="100" r="95" fill="none" stroke="#294A80" stroke-width="9"/>
-      </svg>
+      <img src="logo_spbguptd.png" alt="СПбГУПТД" class="header-logo-img" style="height:48px; width:auto;">
+      <div class="header-divider"></div>
+      <img src="logo_kafedra.png" alt="Кафедра ЭиФ" class="header-logo-img" style="height:48px; width:auto;">
       <div class="header-divider"></div>
       <div class="header-name">
-        ЦМИ
+        Центр маркетинговых исследований
         <span class="header-name-marker">«МАРКЕР»</span>
-        <small>ЭиФ СПбГУПТД</small>
+        <small>ЭиФ ИЭСТ СПбГУПТД</small>
       </div>
-      <div class="header-divider"></div>
-      <a href="https://sutd.ru" target="_blank" rel="noopener" class="header-univ-logo" title="СПбГУПТД">
-        <img src="https://sutd.ru/local/templates/newMain/images/logo-color.svg" alt="СПбГУПТД" height="36" onerror="this.style.display='none'">
-      </a>
     </div>
 
     <nav class="header-nav">
